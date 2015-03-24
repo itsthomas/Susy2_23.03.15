@@ -12,7 +12,7 @@ javascripts_dir = 'js'
 fonts_dir = 'fonts'
 
 #   To enable debugging comments that display the original location of your selectors.
-line_comments = true
+line_comments = false
 
 preferred_syntax = :sass
 
