@@ -50,6 +50,23 @@ aside {
 	height: 80vh;
 }
 
+footer {
+	background: #054A91;
+	color: #fff;
+
+	a {
+		color: orange;
+	}
+}
+
+main[role="main"], aside {
+	padding: 20px;
+}
+
+p {
+	margin: 0;
+}
+
 .sexy_line {
 	max-width: 80%;
 	color: #ccc;
