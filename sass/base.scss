@@ -1,0 +1,55 @@
+@import "susy";
+@import "partials/normalize";
+
+$susy: (
+  columns: 12,
+  gutters: 1/16,
+  debug: (
+      image: show,
+      output: overlay,
+    )
+  );
+
+#wrapper {
+	@include container;
+}
+
+main {
+	@include span(9 of 12);
+	background: #d6d1b1;
+	height: 80vh;
+}
+
+aside {
+	@include span(3 last);
+	background: #9DB17C;
+	height: 80vh;
+}
+
+.sexy_line {
+	max-width: 80%;
+	color: #ccc;
+}
+
+nav {
+	@include container;
+	// background: #82735C;
+
+	ul li {
+		float: left;
+		padding: 10px;
+		list-style: none;
+		background-color: #82735C;
+		border-radius: 5px 5px 0 0;
+		margin-right: 5px;
+	}
+
+	ul li:hover {
+		background: #544939;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
