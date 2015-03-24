@@ -1,9 +1,31 @@
 @import "susy";
 @import "partials/normalize";
 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+@include border-box-sizing;
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+
 $susy: (
   columns: 12,
   gutters: 1/16,
+  global-box-sizing: border-box,
   debug: (
       image: show,
       output: overlay,
@@ -14,7 +36,7 @@ $susy: (
 	@include container;
 }
 
-main {
+main[role="main"] {
 	@include span(9 of 12);
 	background: #d6d1b1;
 	height: 80vh;
@@ -58,4 +80,16 @@ nav {
 		color: #fff;
 		text-decoration: none;
 	}
+}
+
+hr.sexy_line {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:    -moz-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:     -ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:      -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:         linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
 }

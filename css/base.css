@@ -396,6 +396,30 @@ th {
   padding: 0;
 }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 #wrapper {
   max-width: 100%;
   margin-left: auto;
@@ -445,7 +469,7 @@ head:hover ~ #wrapper:before, head:hover ~ body #wrapper:before {
   background-position: left top;
 }
 
-main {
+main[role="main"] {
   width: 74.87685%;
   float: left;
   margin-right: 0.49261%;
@@ -513,6 +537,18 @@ nav ul li:hover {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+
+hr.sexy_line {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: -moz-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: -ms-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
 }
 
 /*# sourceMappingURL=base.css.map */
