@@ -442,13 +442,13 @@ th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 #wrapper:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 65, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 65, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head {
   display: block;
   position: fixed;
@@ -458,7 +458,7 @@ head {
   color: #333;
   background: rgba(255, 255, 255, 0.25);
 }
-/* line 66, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 66, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head:before {
   content: "|||";
   display: block;
@@ -467,16 +467,16 @@ head:before {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 67, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 67, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head:hover {
   background: rgba(255, 255, 255, 0.5);
   color: red;
 }
-/* line 71, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 71, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head:hover ~ #wrapper, head:hover ~ body #wrapper {
   position: relative;
 }
-/* line 74, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 74, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head:hover ~ #wrapper:before, head:hover ~ body #wrapper:before {
   position: absolute;
   top: 0;
@@ -499,9 +499,11 @@ main {
   margin-right: 0.49261%;
   background: #d6d1b1;
   height: 80vh;
+  position: relative;
+  z-index: 1;
 }
 
-/* line 23, ../sass/base.scss */
+/* line 25, ../sass/base.scss */
 aside {
   width: 24.63054%;
   float: right;
@@ -510,29 +512,29 @@ aside {
   height: 80vh;
 }
 
-/* line 29, ../sass/base.scss */
+/* line 31, ../sass/base.scss */
 .sexy_line {
   max-width: 80%;
   color: #ccc;
 }
 
-/* line 34, ../sass/base.scss */
+/* line 36, ../sass/base.scss */
 nav {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 nav:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 71, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 71, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head:hover ~ nav, head:hover ~ body nav {
   position: relative;
 }
-/* line 74, ../../../../../Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
+/* line 74, c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.1.3/sass/susy/language/susy/_background.scss */
 head:hover ~ nav:before, head:hover ~ body nav:before {
   position: absolute;
   top: 0;
@@ -547,20 +549,24 @@ head:hover ~ nav:before, head:hover ~ body nav:before {
   background-clip: content-box;
   background-position: left top;
 }
-/* line 38, ../sass/base.scss */
+/* line 40, ../sass/base.scss */
 nav ul li {
   float: left;
-  padding: 10px;
+  padding: 10px 10px 15px 10px;
   list-style: none;
   background-color: #82735C;
   border-radius: 5px 5px 0 0;
   margin-right: 5px;
+  position: relative;
+  bottom: -5px;
+  z-index: 0;
 }
-/* line 47, ../sass/base.scss */
+/* line 52, ../sass/base.scss */
 nav ul li:hover {
   background: #544939;
+  bottom: 0;
 }
-/* line 51, ../sass/base.scss */
+/* line 57, ../sass/base.scss */
 nav a {
   color: #fff;
   text-decoration: none;
